@@ -3,8 +3,8 @@
 class zeppelin(
 
   String $zeppelin_mem      = '-Xms1024m -Xmx4g -XX:MaxPermSize=512m',
-  String $zeppelin_intp_mem = '-Xms1024m -Xmx4g -XX:MaxPermSize=512m',
-  Array  $interpreters      = ['spark'],
+  String $zeppelin_intp_mem = '-Xms1024m -Xmx4g -XX:MaxPermSize=512m'
+  Array  $interpreters      = ['spark']
 
 )inherits zeppelin::params{
 

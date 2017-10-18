@@ -1,0 +1,13 @@
+##
+# File managed by Puppet, Don't edit here
+##
+
+export ZEPPELIN_MEM="<%= $zeppelin_mem %>"
+export ZEPPELIN_INTP_MEM="<%= $zeppelin_intp_mem %>"
+
+<% if $hadoop_conf_dir != '' { -%>
+export HADOOP_CONF_DIR="<%=  $hadoop_conf_dir %>"
+<% } -%>
+<% if $spark_home != '' { -%>
+export SPARK_HOME="<%=  $spark_home %>"
+<% } -%>

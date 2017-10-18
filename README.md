@@ -1,2 +1,1 @@
-# puppet-zeppelin
-An Apache Zeppelin module for puppet
+# Puppet profile Apache Zeppelin

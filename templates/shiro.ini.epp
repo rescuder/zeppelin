@@ -1,0 +1,26 @@
+##
+# File managed by Puppet, Don't edit here
+##
+
+[users]
+<% $users.each |$username,$password| { -%>
+<%= $username %> = <%= $password %>, admin
+<% } -%>
+
+
+
+[main]
+sessionManager = org.apache.shiro.web.session.mgt.DefaultWebSessionManager
+securityManager.sessionManager = $sessionManager
+securityManager.sessionManager.globalSessionTimeout = 86400000
+shiro.loginUrl = /api/login
+
+[roles]
+role1 = *
+role2 = *
+role3 = *
+admin = *
+
+[urls]
+/api/version = anon
+/** = authc

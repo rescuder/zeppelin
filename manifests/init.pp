@@ -14,7 +14,7 @@ class zeppelin(
     'spark_home'        => $spark_home,
     'hadoop_conf_dir'   => $hadoop_conf_dir
   }
-
+lelelelelelasd
   $params_zeppelin_site = {
     'mvnrepo'  => $mvnrepo,
     's3bucket' => $s3bucket,
